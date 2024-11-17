@@ -1,0 +1,71 @@
+.main-content {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Spread out content between the image and text/buttons */
+    align-items: center; /* Vertically center the items */
+    padding: 3rem;
+    background-color: #f9f9f9;
+  }
+  
+  .content-container {
+    text-align: left; /* Aligning text and buttons to the right */
+    max-width: 50%; /* Limit the width to half the screen for better spacing */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #1f5186; /* Ocean blue color */
+    animation: slideIn 1.5s ease-out forwards; /* Apply the animation */
+    margin-bottom: 1.5rem; /* Add space below the heading */
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #666;
+    padding-bottom: 1rem; /* Padding at the bottom of the paragraph */
+  }
+  
+  .cta-buttons {
+    margin-top: 2rem;
+    padding-top: 1rem; /* Padding at the top of the buttons */
+  }
+  
+  .cta-buttons button {
+    margin: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .cta-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-container {
+    text-align: left; /* Aligning the image to the left */
+  }
+  
+  .car-image {
+    width: 85%; /* Adjusted size for the image */
+    height: auto;
+    max-height: 600px; /* Limit the height of the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%); /* Start from the left */
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      transform: translateX(0); /* End at the normal position */
+      opacity: 1; /* Make it visible */
+    }
+  }
+  
+  
+
